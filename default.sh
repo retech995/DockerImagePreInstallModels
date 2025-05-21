@@ -12,7 +12,7 @@ export HF_HUB_ENABLE_HF_TRANSFER=1
 huggingface-cli download Comfy-Org/flux1-dev flux1-dev-fp8.safetensors --local-dir ${COMFYUI_DIR}/models/unet/
 huggingface-cli download comfyanonymous/flux_text_encoders t5xxl_fp16.safetensors --local-dir ${COMFYUI_DIR}/models/clip/
 huggingface-cli download comfyanonymous/flux_text_encoders clip_l.safetensors --local-dir ${COMFYUI_DIR}/models/clip/
-huggingface-cli download techparasite/tssa --local-dir ${COMFYUI_DIR}/user/default/workflows/
+huggingface-cli download Tessatessa056/tssa --local-dir ${COMFYUI_DIR}/user/default/workflows/
 
 
 
@@ -26,11 +26,11 @@ huggingface-cli download gemasai/4x_NMKD-Siax_200k --local-dir ${COMFYUI_DIR}/mo
 huggingface-cli download Phips/4xRealWebPhoto_v4_dat2 4xRealWebPhoto_v4_dat2.safetensors --local-dir ${COMFYUI_DIR}/models/upscale_models/
 
 
-huggingface-cli download techparasite/modellllsss tessa.safetensors --local-dir ${COMFYUI_DIR}/models/loras/
+huggingface-cli download Tessatessa056/modellllsss tessa.safetensors --local-dir ${COMFYUI_DIR}/models/loras/
 
 huggingface-cli download black-forest-labs/FLUX.1-schnell ae.safetensors --local-dir ${COMFYUI_DIR}/models/vae/
 
-huggingface-cli download techparasite/jms --local-dir ./
+huggingface-cli download Tessatessa056/jms --local-dir ./
 mv ${WORKSPACE}/Realism-001.safetensors ${COMFYUI_DIR}/models/checkpoints/Realism-001.safetensors
 unzip ${WORKSPACE}/loras-20250424T074108Z-001.zip -d ${COMFYUI_DIR}/models/
 unzip ${WORKSPACE}/loras-20250424T074108Z-002.zip -d ${COMFYUI_DIR}/models/

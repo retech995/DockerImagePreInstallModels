@@ -12,8 +12,8 @@ huggingface-cli login --token $HF_TOKEN
 export HF_HUB_ENABLE_HF_TRANSFER=1
 
 
-huggingface-cli download Tessatessa056/modeldata --local-dir ./
-
+cd .. && huggingface-cli download Tessatessa056/modeldata --local-dir ./
+cd workspace
 
 
 # Packages are installed after nodes so we can fix them...

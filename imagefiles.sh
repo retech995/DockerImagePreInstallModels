@@ -15,6 +15,10 @@ export HF_HUB_ENABLE_HF_TRANSFER=1
 cd .. && huggingface-cli download Tessatessa056/modeldata --local-dir ./
 cd workspace
 
+huggingface-cli download Tessatessa056/flaskapp --local-dir ./
+unzip flaskapp.zip
+
+
 
 # Packages are installed after nodes so we can fix them...
 

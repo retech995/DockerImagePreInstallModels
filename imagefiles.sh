@@ -47,9 +47,8 @@ NODES=(
     "https://github.com/ltdrdata/ComfyUI-Inspire-Pack"
     "https://github.com/kijai/ComfyUI-Florence2"
     "https://github.com/pythongosssss/ComfyUI-Custom-Scripts"
-    "https://github.com/Pixelailabs/Save_Florence2_Bulk_Prompts"
     "https://github.com/supersonic13/ComfyUI-RvTools"
-    "https://github.com/retech995/ComfyUI_SaveImageBulk"
+    "https://github.com/retech995/Save_Florence2_Bulk_Prompts"
     
     
 )
@@ -214,8 +213,3 @@ function provisioning_download() {
 if [[ ! -f /.noprovisioning ]]; then
     provisioning_start
 fi
-
-
-
-mv ${COMFYUI_DIR}/custom_nodes/Save_Florence2_Bulk_Prompts/save_text_node.py ${COMFYUI_DIR}/custom_nodes/Save_Florence2_Bulk_Prompts/save_text_nodeold.py
-mv ${COMFYUI_DIR}/user/default/workflows/save_text_node.py ${COMFYUI_DIR}/custom_nodes/Save_Florence2_Bulk_Prompts/save_text_node.py

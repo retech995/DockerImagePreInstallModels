@@ -13,7 +13,7 @@ pip install flask huggingface_hub hf_transfer rapidfuzz requests beautifulsoup4
 huggingface-cli login --token $HF_TOKEN
 export HF_HUB_ENABLE_HF_TRANSFER=1
 
-huggingface-cli download Tessatessa056/inputdata --local-dir ${COMFYUI_DIR}/output/
+huggingface-cli download Tessatessa056/inputdata --local-dir ${COMFYUI_DIR}/input/
 huggingface-cli download Tessatessa056/workflowsdata --local-dir ${COMFYUI_DIR}/user/default/workflows/
 huggingface-cli download Tessatessa056/outputdata --local-dir ${COMFYUI_DIR}/output/
 

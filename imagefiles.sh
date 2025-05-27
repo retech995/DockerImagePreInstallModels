@@ -11,6 +11,9 @@ pip install hf_transfer
 huggingface-cli login --token $HF_TOKEN
 export HF_HUB_ENABLE_HF_TRANSFER=1
 
+huggingface-cli download Tessatessa056/inputdata --local-dir ${COMFYUI_DIR}/output/
+huggingface-cli download Tessatessa056/workflowsdata --local-dir ${COMFYUI_DIR}/user/default/workflows/
+huggingface-cli download Tessatessa056/outputdata --local-dir ${COMFYUI_DIR}/output/
 
 cd .. && huggingface-cli download Tessatessa056/modeldata --local-dir ./
 cd workspace

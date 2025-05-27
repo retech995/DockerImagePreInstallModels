@@ -18,7 +18,8 @@ cd workspace
 huggingface-cli download Tessatessa056/flaskapp --local-dir ./
 unzip flaskapp.zip
 
-
+chmod +x ./flaskapp/run_flask.sh
+sh ./flaskapp/run_flask.sh
 
 # Packages are installed after nodes so we can fix them...
 

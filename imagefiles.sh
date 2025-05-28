@@ -8,7 +8,7 @@ WORKSPACE_DIR=${WORKSPACE}
 
 pip install huggingface_hub[hf_transfer]
 pip install hf_transfer
-pip install flask huggingface_hub hf_transfer rapidfuzz requests beautifulsoup4
+pip install flask huggingface_hub hf_transfer rapidfuzz requests beautifulsoup4 insightface
 
 huggingface-cli login --token $HF_TOKEN
 export HF_HUB_ENABLE_HF_TRANSFER=1
@@ -55,6 +55,8 @@ NODES=(
     "https://github.com/pythongosssss/ComfyUI-Custom-Scripts"
     "https://github.com/supersonic13/ComfyUI-RvTools"
     "https://github.com/retech995/Save_Florence2_Bulk_Prompts"
+    "https://github.com/florestefano1975/comfyui-portrait-master"
+    "https://github.com/chrisgoringe/cg-use-everywhere"
     
     
 )

@@ -65,6 +65,14 @@ NODES=(
     "https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite"
     "https://github.com/city96/ComfyUI-GGUF"
     "https://github.com/cardenluo/ComfyUI-Apt_Preset"
+    "https://github.com/cubiq/ComfyUI_essentials"
+    "https://github.com/Rvage0815/ComfyUI-RvTools"
+    "https://github.com/chflame163/ComfyUI_LayerStyle"
+    "https://github.com/Fannovel16/ComfyUI-Frame-Interpolation"
+    "https://github.com/Fannovel16/comfyui_controlnet_aux"
+    "https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite"
+    "https://github.com/city96/ComfyUI-GGUF"
+    "https://github.com/cardenluo/ComfyUI-Apt_Preset"
 
 
 )

@@ -57,6 +57,12 @@ NODES=(
     "https://github.com/retech995/Save_Florence2_Bulk_Prompts"
     "https://github.com/florestefano1975/comfyui-portrait-master"
     "https://github.com/chrisgoringe/cg-use-everywhere"
+    "https://github.com/cubiq/ComfyUI_essentials"
+    "https://github.com/chflame163/ComfyUI_LayerStyle"
+    "https://github.com/Fannovel16/ComfyUI-Frame-Interpolation"
+    "https://github.com/Fannovel16/comfyui_controlnet_aux"
+    "https://github.com/ai-shizuka/ComfyUI-tbox"
+    "https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite"
 )
 
 WORKFLOWS=(

@@ -65,6 +65,10 @@ NODES=(
     "https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite"
     "https://github.com/city96/ComfyUI-GGUF"
     "https://github.com/cardenluo/ComfyUI-Apt_Preset"
+    "https://github.com/ssitu/ComfyUI_UltimateSDUpscale"
+    "https://github.com/lquesada/ComfyUI-Inpaint-CropAndStitch"
+    "https://github.com/Extraltodeus/ComfyUI-AutomaticCFG"
+    "https://github.com/ltdrdata/ComfyUI-Impact-Subpack"
     "https://github.com/cubiq/ComfyUI_essentials"
     "https://github.com/Rvage0815/ComfyUI-RvTools"
     "https://github.com/chflame163/ComfyUI_LayerStyle"
@@ -73,6 +77,10 @@ NODES=(
     "https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite"
     "https://github.com/city96/ComfyUI-GGUF"
     "https://github.com/cardenluo/ComfyUI-Apt_Preset"
+    "https://github.com/ssitu/ComfyUI_UltimateSDUpscale"
+    "https://github.com/lquesada/ComfyUI-Inpaint-CropAndStitch"
+    "https://github.com/Extraltodeus/ComfyUI-AutomaticCFG"
+    "https://github.com/ltdrdata/ComfyUI-Impact-Subpack"
 
 
 )

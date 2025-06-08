@@ -81,6 +81,7 @@ NODES=(
     "https://github.com/lquesada/ComfyUI-Inpaint-CropAndStitch"
     "https://github.com/Extraltodeus/ComfyUI-AutomaticCFG"
     "https://github.com/ltdrdata/ComfyUI-Impact-Subpack"
+    "https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes"
 
 
 )

@@ -13,7 +13,7 @@ huggingface-cli login --token $HF_TOKEN
 export HF_HUB_ENABLE_HF_TRANSFER=1
 
 
-cd .. && huggingface-cli download Tessatessa056/modeldata --local-dir ./
+
 cd workspace
 
 git clone --branch sd3 --single-branch https://github.com/kohya-ss/sd-scripts.git && \

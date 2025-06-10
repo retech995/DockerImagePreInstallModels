@@ -20,6 +20,11 @@ git clone --branch sd3 --single-branch https://github.com/kohya-ss/sd-scripts.gi
 cd sd-scripts && \
 pip install -r requirements.txt
 
+huggingface-cli download comfyanonymous/flux_text_encoders t5xxl_fp16.safetensors --local-dir ./
+huggingface-cli download comfyanonymous/flux_text_encoders clip_l.safetensors --local-dir ./
+huggingface-cli download black-forest-labs/FLUX.1-schnell ae.safetensors --local-dir ./
+huggingface-cli download Comfy-Org/flux1-dev flux1-dev-fp8.safetensors --local-dir ./
+
 cd ..
 pip install -U transformers
 pip install -U accelerate

@@ -5,7 +5,6 @@ COMFYUI_DIR=${WORKSPACE}/ComfyUI
 WORKSPACE_DIR=${WORKSPACE}
 
 
-
 pip install huggingface_hub[hf_transfer]
 pip install hf_transfer
 pip install flask huggingface_hub hf_transfer rapidfuzz requests beautifulsoup4 insightface
@@ -13,13 +12,20 @@ pip install flask huggingface_hub hf_transfer rapidfuzz requests beautifulsoup4 
 huggingface-cli login --token $HF_TOKEN
 export HF_HUB_ENABLE_HF_TRANSFER=1
 
-huggingface-cli download Tessatessa056/inputdata --local-dir ${COMFYUI_DIR}/input/
-huggingface-cli download Tessatessa056/workflowsdata --local-dir ${COMFYUI_DIR}/user/default/workflows/
-huggingface-cli download Tessatessa056/outputdata --local-dir ${COMFYUI_DIR}/output/
 
 cd .. && huggingface-cli download Tessatessa056/modeldata --local-dir ./
 cd workspace
 
+git clone --branch sd3 --single-branch https://github.com/kohya-ss/sd-scripts.git && \
+cd sd-scripts && \
+pip install -r requirements.txt
+
+cd ..
+pip install -U transformers
+pip install -U accelerate
+
+pip install llama-cpp-python --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cu124
+CMAKE_ARGS="-DGGML_CUDA=on" pip install --upgrade --force-reinstall --no-cache-dir llama-cpp-python
 huggingface-cli download Tessatessa056/flaskapp --local-dir ./
 unzip flaskapp.zip
 
@@ -42,21 +48,6 @@ NODES=(
     "https://github.com/ltdrdata/ComfyUI-Impact-Pack"
     "https://github.com/rgthree/rgthree-comfy"
     "https://github.com/yolain/ComfyUI-Easy-Use"
-    "https://github.com/WASasquatch/was-node-suite-comfyui"
-    "https://github.com/kijai/ComfyUI-KJNodes"
-    "https://github.com/cubiq/ComfyUI_FaceAnalysis"
-    "https://github.com/BadCafeCode/masquerade-nodes-comfyui"
-    "https://github.com/chflame163/ComfyUI_LayerStyle_Advance"
-    "https://github.com/Ryuukeisyou/comfyui_face_parsing"
-    "https://github.com/MohammadAboulEla/ComfyUI-iTools"
-    "https://github.com/giriss/comfy-image-saver"
-    "https://github.com/ltdrdata/ComfyUI-Inspire-Pack"
-    "https://github.com/kijai/ComfyUI-Florence2"
-    "https://github.com/pythongosssss/ComfyUI-Custom-Scripts"
-    "https://github.com/supersonic13/ComfyUI-RvTools"
-    "https://github.com/retech995/Save_Florence2_Bulk_Prompts"
-    "https://github.com/florestefano1975/comfyui-portrait-master"
-    "https://github.com/chrisgoringe/cg-use-everywhere"
     
     
 )

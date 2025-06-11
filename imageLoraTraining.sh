@@ -18,7 +18,7 @@ cd workspace
 git clone --branch sd3 --single-branch https://github.com/kohya-ss/sd-scripts.git && \
 cd sd-scripts && \
 pip install -r requirements.txt
-
+mkdir images
 huggingface-cli login --token $HF_TOKEN
 export HF_HUB_ENABLE_HF_TRANSFER=1
 
@@ -33,7 +33,7 @@ pip install -U accelerate
 
 pip install llama-cpp-python --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cu124
 CMAKE_ARGS="-DGGML_CUDA=on" pip install --upgrade --force-reinstall --no-cache-dir llama-cpp-python
-huggingface-cli download Tessatessa056/flaskapp --local-dir ./
+huggingface-cli download Tessatessa056/flaskapploratrain --local-dir ./
 unzip flaskapp.zip
 
 chmod +x ./flaskapp/run_flask.sh

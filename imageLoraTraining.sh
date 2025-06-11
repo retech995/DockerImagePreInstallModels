@@ -7,7 +7,7 @@ WORKSPACE_DIR=${WORKSPACE}
 
 pip install huggingface_hub[hf_transfer]
 pip install hf_transfer
-pip install flask huggingface_hub hf_transfer rapidfuzz requests beautifulsoup4 insightface
+pip install flask huggingface_hub hf_transfer rapidfuzz requests beautifulsoup4 insightface flash_attn
 
 
 

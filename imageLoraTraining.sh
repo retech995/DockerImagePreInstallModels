@@ -26,7 +26,7 @@ huggingface-cli download black-forest-labs/FLUX.1-dev flux1-dev.safetensors --lo
 huggingface-cli download comfyanonymous/flux_text_encoders clip_l.safetensors --local-dir ./
 huggingface-cli download black-forest-labs/FLUX.1-schnell ae.safetensors --local-dir ./
 huggingface-cli download comfyanonymous/flux_text_encoders t5xxl_fp16.safetensors --local-dir ./
-
+huggingface-cli download Tessatessa056/loratrain --local-dir ./
 cd ..
 pip install -U transformers
 pip install -U accelerate

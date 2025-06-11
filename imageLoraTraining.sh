@@ -9,8 +9,7 @@ pip install huggingface_hub[hf_transfer]
 pip install hf_transfer
 pip install flask huggingface_hub hf_transfer rapidfuzz requests beautifulsoup4 insightface
 
-huggingface-cli login --token $HF_TOKEN
-export HF_HUB_ENABLE_HF_TRANSFER=1
+
 
 
 
@@ -19,6 +18,9 @@ cd workspace
 git clone --branch sd3 --single-branch https://github.com/kohya-ss/sd-scripts.git && \
 cd sd-scripts && \
 pip install -r requirements.txt
+
+huggingface-cli login --token $HF_TOKEN
+export HF_HUB_ENABLE_HF_TRANSFER=1
 
 huggingface-cli download black-forest-labs/FLUX.1-dev flux1-dev.safetensors --local-dir ./
 huggingface-cli download comfyanonymous/flux_text_encoders clip_l.safetensors --local-dir ./

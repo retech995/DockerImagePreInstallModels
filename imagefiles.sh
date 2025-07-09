@@ -84,6 +84,7 @@ NODES=(
     "https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes"
     "https://github.com/kijai/ComfyUI-WanVideoWrapper"
     "https://github.com/crystian/ComfyUI-Crystools"
+    "https://github.com/Gourieff/ComfyUI-ReActor"
 
 
 )

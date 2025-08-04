@@ -27,6 +27,8 @@ huggingface-cli download comfyanonymous/flux_text_encoders clip_l.safetensors --
 huggingface-cli download black-forest-labs/FLUX.1-schnell ae.safetensors --local-dir ./
 huggingface-cli download comfyanonymous/flux_text_encoders t5xxl_fp16.safetensors --local-dir ./
 huggingface-cli download Tessatessa056/loratrain --local-dir ./
+huggingface-cli download Tessatessa056/modeldata workspace/ComfyUI/models/checkpoints --local-dir ./
+
 cd ..
 pip install torch==2.6.0+cu124 torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
 pip install -U transformers

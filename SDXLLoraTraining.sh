@@ -27,7 +27,17 @@ huggingface-cli download comfyanonymous/flux_text_encoders clip_l.safetensors --
 huggingface-cli download black-forest-labs/FLUX.1-schnell ae.safetensors --local-dir ./
 huggingface-cli download comfyanonymous/flux_text_encoders t5xxl_fp16.safetensors --local-dir ./
 huggingface-cli download Tessatessa056/loratrain --local-dir ./
-huggingface-cli download Tessatessa056/modeldata workspace/ComfyUI/models/checkpoints --local-dir ./
+huggingface-cli download Tessatessa056/modeldata workspace/ComfyUI/models/checkpoints/lustifySDXLNSFW_oltFIXEDTEXTURES.safetensors --local-dir ./
+huggingface-cli download Tessatessa056/modeldata workspace/ComfyUI/models/checkpoints/bigLove_xl3.safetensors --local-dir ./
+huggingface-cli download Tessatessa056/modeldata workspace/ComfyUI/models/checkpoints/bigLust_v16.safetensors --local-dir ./
+huggingface-cli download Tessatessa056/modeldata workspace/ComfyUI/models/checkpoints/epicrealismXL_vxviLastfameRealism.safetensors --local-dir ./
+
+mv ./workspace/ComfyUI/models/checkpoints/lustifySDXLNSFW_oltFIXEDTEXTURES.safetensors ./lustifySDXLNSFW_oltFIXEDTEXTURES.safetensors
+mv ./workspace/ComfyUI/models/checkpoints/bigLove_xl3.safetensors ./bigLove_xl3.safetensors
+mv ./workspace/ComfyUI/models/checkpoints/bigLust_v16.safetensors ./bigLust_v16.safetensors
+mv ./workspace/ComfyUI/models/checkpoints/epicrealismXL_vxviLastfameRealism.safetensors ./epicrealismXL_vxviLastfameRealism.safetensors
+
+
 
 cd ..
 pip install torch==2.6.0+cu124 torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
@@ -36,7 +46,7 @@ pip install -U accelerate
 
 pip install llama-cpp-python --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cu124
 CMAKE_ARGS="-DGGML_CUDA=on" pip install --upgrade --force-reinstall --no-cache-dir llama-cpp-python
-huggingface-cli download Tessatessa056/flaskapploratrain --local-dir ./
+huggingface-cli download Tessatessa056/flaskapploratrainSDXL --local-dir ./
 unzip flaskapp.zip
 
 chmod +x ./flaskapp/run_flask.sh
